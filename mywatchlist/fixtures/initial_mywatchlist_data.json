@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 1,
+        "fields": {
+            "watched": true,
+            "title": "Peaky Blinders Season 5",
+            "rating": 5,
+            "release_date": "October 4, 2019",
+            "review": "BBC Classics, great storyline and character adaptation "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 2,
+        "fields": {
+            "watched": true,
+            "title": "Captain America : The Winter Soldier",
+            "rating": 4,
+            "release_date": "4 April, 2014",
+            "review": "This film created a new hope for marvel fans to keep on tracing this new character related to Captain America. "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 3,
+        "fields": {
+            "watched": true,
+            "title": "Story of Kale: When Someone's in Love",
+            "rating": 3,
+            "release_date": "23 Oktober, 2020",
+            "review": "Personally, this movie is very relateable with my feelings when I watched the movie. I feel like those who felt like they do need help with their toxic relationship should watch this. 100% Recommended  "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 4,
+        "fields": {
+            "watched": false,
+            "title": "Mencuri Raden Saleh",
+            "rating": 4,
+            "release_date": "25 August, 2022",
+            "review": "In Indonesia, this movie had been phenomenal for the youths and millenials. The main actors have showed great talent and a big"
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 5,
+        "fields": {
+            "watched": false,
+            "title": "THOR: Love and Thunder",
+            "rating": 5,
+            "release_date": "6 July, 2022",
+            "review": "Many people said that this movie have been a great sequel from the previous thors since it has great comedy and excitement. "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 6,
+        "fields": {
+            "watched": true,
+            "title": "Your Name",
+            "rating": 5,
+            "release_date": "7 December, 2016",
+            "review": "The best tear jerker romance anime ever existed. "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 7,
+        "fields": {
+            "watched": true,
+            "title": "A Silent Voice",
+            "rating": 5,
+            "release_date": "3 Mei, 2017",
+            "review": "Can you not cry while watching this movie? "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 8,
+        "fields": {
+            "watched": true,
+            "title": "Ted",
+            "rating": 2,
+            "release_date": "19 September, 2012",
+            "review": "Bad plot, the comedy genre carried the whole movie. "
+        }
+    },
+    {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 9,
+        "fields": {
+            "watched": false,
+            "title": "One Piece",
+            "rating": 5,
+            "release_date": "20 October, 1999",
+            "review": "I can't wait to watch this legendary anime. "
+        }
+    },
+     {
+        "model": "mywatchlist.filmstowatch",
+        "pk": 10,
+        "fields": {
+            "watched": false,
+            "title": "THE WOLF OF WALL STREET",
+            "rating": 4,
+            "release_date": "21 January, 2014",
+            "review": "Leonardo made the story even better. "
+        }
+    }
+]

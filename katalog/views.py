@@ -19,3 +19,4 @@ def request_catalogs(request):
         'katalog.html',
         context,
     )
+    

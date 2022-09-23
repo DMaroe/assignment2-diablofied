@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+ {% block content %}
+
+ <h2>Name: {{ name }}</h2>
+ <h3>Student Id : {{ student_id }}</h3>
+
+ <table>
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release Date</th>
+      <th>Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for item in items %}
+    <tr>
+        {% if item.watched %}
+            <td>Watched</td>
+        {% else %}
+            <td>Not Watched</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.rating }}</td>
+        <td>{{ item.release_date }}</td>
+        <td>{{ item.review }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+ {% endblock content %}
