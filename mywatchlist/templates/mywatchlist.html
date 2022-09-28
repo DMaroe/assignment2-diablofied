@@ -17,12 +17,17 @@
     <tr>
         {% if item.watched %}
             <td>Watched</td>
+            <td>{{ item.title }}</td>
+        <td>{{ item.rating }}</td>
+        <td>{{ item.release_date }}</td>
+        <td>{{ item.review }}</td>
         {% else %}
             <td>Not Watched</td>
         <td>{{ item.title }}</td>
         <td>{{ item.rating }}</td>
         <td>{{ item.release_date }}</td>
         <td>{{ item.review }}</td>
+        {% endif %}
     </tr>
     {% endfor %}
   </table>

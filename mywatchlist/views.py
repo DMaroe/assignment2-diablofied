@@ -8,7 +8,7 @@ from mywatchlist.models import MyWatchListItem
 # main HTML function
 def mywatchlistitem_html(request):
     data = MyWatchListItem.objects.all()
-
+    print(data)
     # data that will be passed to the HTML (in dictionary)
     context = {
         'name': 'Dylan Dahran Pribadi',
@@ -20,7 +20,6 @@ def mywatchlistitem_html(request):
         'mywatchlist.html',
         context
     )
-    ...
 
 # request data in the form of xml
 def mywatchlistitem_xml(request):
@@ -31,13 +30,11 @@ def mywatchlistitem_xml(request):
         serializers.serialize("xml", data),
         content_type="application/xml"
         )
-    ...
 
 # request data in the form of json
 def mywatchlistitem_json(request):
     data = MyWatchListItem.objects.all()
     return HttpResponse(
-        serializers.serialize("jason", data),
+        serializers.serialize("json", data),
         content_type="application/json"
     )
-    ...

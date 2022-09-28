@@ -11,4 +11,3 @@ class MyWatchListItem(models.Model):
     release_date = models.CharField(max_length=255)
     review = models.TextField() #textfield can contain more than 255 characters
     
-    ...

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Username: {{ username }} </h1>
+<h2>To-do list app!</h2>
+
+<table cellspacing = "16">
+    
+  <thead>
+    <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for todo in todos %}
+    <tr>
+      <td>{{ todo.date }}</td>
+      <td>{{ todo.title }}</td>
+      <td>{{ todo.description }}</td>
+      {% if todo.is_finished %}
+        <td>Done</td>
+      {% else %}
+        <td>In Progress</td>
+      {% endif %}
+      <td>
+        <a href="{% url 'todolist:refresh' todo.pk %}">Toggle</a>
+        <a href="{% url 'todolist:delete' todo.pk %}" >Delete</a>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+
+</table>
+
+<a href="{% url 'todolist:logout_user' %}", class="custom-alert-button">Logout</a>
+<a href="{% url 'todolist:new_task' %}", class="custom-primary-button">Create Task</a>
+
+
+{% endblock content %}
