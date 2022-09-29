@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>Name: </h3>
+<p>{{ name }}!</p>
+
+<table cellspacing = "20">
+    <tr>
+    <th>Item Name</th>
+    <th>Item Price</th>
+    <th>Description</th>
+    </tr>
+    
+    {% for item in list_item %}
+    <tr>
+        <th>{{ item.item_name }}</th>
+        <th>{{ item.item_price }}</th>
+        <th>{{ item.description }}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}
+
+

@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'example_app',
     'katalog',
     'mywatchlist',
-    'todolist'
+    'todolist',
+    'wishlist'
 ]
 
 MIDDLEWARE = [
@@ -150,4 +151,7 @@ FIXTURE_DIRS = [
 ]
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# Static files (CSS, JavaScript, Images)
+  # httpsdocs.djangoproject.comen1.9howtostatic-files
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_URL = 'static/'
