@@ -15,10 +15,24 @@ For context, An HTML Form is a group of one or more fields/widgets on a web page
 
 ref : https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Forms
 
-
+You can do it by making form as an object with manual input fields in HTML.
 
 3. Describe the data flow process from the submission made by the user through the HTML form, data storage in the database, until the appearance of the data that has been stored in the HTML template.
 
-First of all, we click the "Create Task" button
+When clicking any button with a POST request, the browser will respond by sending POST request to the server, then the POST will make changes to the database. The key is in views (backend), where it connects the data to the database using POST and requests.
 
 4. Explain how you implement the checklist above.
+
+To start it off, you first need to open your directory folder and start an app named 'todolist'.
+
+Add the todolist to INSTALLED_APPS at settings.py
+
+Make models in models.py (user, date, title, description, done) then migrate.
+
+Create several functions in views.py.
+
+Create folder templates to store htmls.
+
+Route urls.py with views.py
+
+Add todolist to urls.py then Deploy the project
