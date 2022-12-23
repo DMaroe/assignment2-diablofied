@@ -65,6 +65,23 @@ def show_todos(request):
     )
 
 @login_required(login_url='/todolist/login/') # login first before doing this
+def new(request):
+    # filters the user, so that each user can have their own todolist
+    data = Tasks.objects.filter(user = request.user)
+    context = {
+        # using cookies since it is a rememberable temporary data
+        'username': request.COOKIES['username'],
+        'last_login': request.COOKIES['last_login'],
+        'todos': data,
+
+    }
+    return render(
+        request,
+        'newtodolist.html',
+        context
+    )
+
+@login_required(login_url='/todolist/login/') # login first before doing this
 def new_task(request):
     form = TaskForm()
     if request.method == 'POST':

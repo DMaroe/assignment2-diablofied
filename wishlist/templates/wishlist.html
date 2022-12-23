@@ -46,13 +46,18 @@
     <th>Item Name</th>
     <th>Item Price</th>
     <th>Description</th>
+    <th>Hidden</th>
     </tr>
     
     {% for item in list_item %}
     <tr>
+        if is_hidden == True:
+        <th style="color: grey ;">{{ item.item_name }}</th>
+        else :
         <th>{{ item.item_name }}</th>
         <th>{{ item.item_price }}</th>
         <th>{{ item.description }}</th>
+        <th>{{ item.is_hidden }}</th>
     </tr>
     {% endfor %}
 </table>

@@ -1,11 +1,97 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block meta %}
-<title>Hello, world!</title>
-{% endblock meta %}
 
 {% block content %}
-  <h1>Hello, world!</h1>
-  <h3>This is example app for Django template</h3>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is MID-Tourism</title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" 
+    crossorigin="anonymous"></script>
+  <style>
+    body{
+      background:linear-gradient(180deg, #FFFFFF 0%, rgba(192, 204, 222, 0.83) 100%);;
+      }
+  </style>
+  {% block meta %}
+  {% endblock meta %}
+
+</head>
+<body>
+  <div class="body-kit">
+      <!--Power words start-->
+      <div class="power-container">
+        <img src="/static/img/power-container.png" alt="Power Container" style="margin-right: auto ;">
+      </div>
+      <!--Power words end-->
+
+    <!--Our Features start-->
+      <div class="our_features">
+      <!--Displaying images, then slide Start-->
+        <div class="catgif-container">
+          <img src="../../static/img/kitty-cat-sandwich.gif" alt="">
+        </div>
+      <!--Displaying images, then slide End-->
+        <div class="power-text">
+          <h3 style="color: white;">We'll help you to the Fullest.</h3>
+        </div>
+      </div>
+    <!--Our Features end-->
+
+    <!--What is MID Tourism? start-->
+      <div class="what">
+        <h3 style="color: white;">What is MID-Tourism?</h3>
+        <p>
+          MID Tourism is a one stop web app for those who want to take a break and enjoy travelling, 
+          yet struggle with the technicalities of obtaining your daily needs when arriving at your 
+          location of leisure. We aim to make your trip the easiest it has ever been, while still 
+          maintaining the authenticity of the experience you are seeking.
+        </p>
+      </div>
+    <!--What is MID Tourism? end-->
+    
+    <!--Why MID Tourism? start-->
+    <div class="why">
+      <h3>Then, WHY us?</h3>
+      <p>
+        because we are the best.
+      </p>
+    </div>
+    <!--Why MID Tourism? end-->
+
+    <!--FAQ and Questions start-->
+    <div class="FAQ-container">
+      <!--FAQ start-->
+      
+      <!--FAQ end-->
+
+      <!--Questions start-->
+      <div class="search-box">
+        <input type="text" placeholder="Ask Away!">
+      </div>
+      <a href="#">Contact Us</a>
+      <!--Questions end-->
+    </div>
+    <!--FAQ and Questions end-->
+
+
+    <!--Link to Js file-->
+    <script src="javascriptfile "></script>
+  </div>
+</body>
+</html>
 {% endblock content %}

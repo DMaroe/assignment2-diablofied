@@ -1,4 +1,3 @@
-{% extends 'base.html' %}
 
 {% block meta %}
 <title>Account Registration</title>
@@ -6,29 +5,259 @@
 
 {% block content %}  
 
-<div class = "login">
-    
-    <h1>Registration Form</h1>  
-
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Register"/></td>  
-                </tr>  
-            </table>  
-        </form>
-
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
-    {% endif %}
-
-</div>  
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    height: 454px;
+  "
+  class="Canvas"
+  ><div
+    style="flex-grow: 1; display: flex"
+    class="Canvas Body"
+    ><div
+      style="
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        box-sizing: border-box;
+      "
+      class="Canvas Placeholder for MacBook Air - 1"
+      ><div
+        style="
+          width: 1280px;
+          height: 100px;
+          display: flex;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-color: #045fd4;
+          border-radius: 0px 0px 30px 30px;
+          box-sizing: border-box;
+        "
+        class="Rectangle 18"
+      ></div
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 344px;
+          top: -1px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 80px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: white;
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >To-do List App</p
+      ><div
+        style="
+          width: 300px;
+          height: 300px;
+          display: flex;
+          position: absolute;
+          left: 432px;
+          top: 124px;
+          background-color: #c42f21;
+          border-radius: 30px;
+          box-sizing: border-box;
+        "
+        class="Rectangle 18"
+      ></div
+      ><div
+        style="
+          width: 300px;
+          height: 50px;
+          display: flex;
+          position: absolute;
+          left: 432px;
+          top: 374px;
+          background-color: white;
+          border-radius: 0px 0px 30px 30px;
+          box-sizing: border-box;
+        "
+        class="Rectangle 20"
+        ><div
+          style="
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 0px 0px 30px 30px;
+          "
+        ></div></div
+      ><div
+        style="
+          width: 250px;
+          height: 40px;
+          display: flex;
+          position: absolute;
+          left: 457px;
+          top: 228px;
+          background-color: white;
+          border-radius: 20px;
+          box-sizing: border-box;
+        "
+        class="Rectangle 19"
+        ><div
+          style="
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid #045fd4;
+            border-radius: 20px;
+          "
+        ></div></div
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 469px;
+          top: 210px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 10px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: white;
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >Username</p
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 476px;
+          top: 238px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 13px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.5);
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >ex : dylanpribadi</p
+      ><div
+        style="
+          width: 250px;
+          height: 40px;
+          display: flex;
+          position: absolute;
+          left: 457px;
+          top: 299px;
+          background-color: white;
+          border-radius: 20px;
+          box-sizing: border-box;
+        "
+        class="Rectangle 19"
+        ><div
+          style="
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid #045fd4;
+            border-radius: 20px;
+          "
+        ></div></div
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 469px;
+          top: 281px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 10px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: white;
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >Password</p
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 474px;
+          top: 310px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 13px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.5);
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >please type a strong password</p
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 475px;
+          top: 136px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 50px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: white;
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >Register</p
+      ><p
+        style="
+          display: flex;
+          position: absolute;
+          left: 501px;
+          top: 390px;
+          justify-content: flex-start;
+          text-align: left;
+          margin: 0;
+          box-sizing: border-box;
+          font-size: 13px;
+          font-family: SF UI Text;
+          font-weight: 700;
+          color: black;
+          letter-spacing: 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        "
+        >Already have an account?</p
+      ></div
+    ></div
+  ></div
+>
 
 {% endblock content %}
