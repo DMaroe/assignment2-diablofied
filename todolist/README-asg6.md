@@ -19,6 +19,8 @@ This paradigm depends on events by paying attention to what operations will be i
 
 3. Describe the implementation of asynchronous programming in AJAX.
 
-Creates a new view and path url that returns a JSON response. The implementation of AJAX asynchronous programming in this task is in the get and post functions to retrieve and send JSON data to the server, as well as set the appearance of the Todo list asynchronously according to the data in the database
+Asynchronous programming is a programming paradigm that allows a program to perform multiple tasks concurrently, rather than sequentially. In the context of AJAX (Asynchronous JavaScript and XML), asynchronous programming is used to make requests to a server without blocking the execution of the rest of the program.
+
+One way to implement asynchronous programming in AJAX is to use the XMLHttpRequest object, which allows a web page to make requests to a server without reloading the page. To make an asynchronous request, you can use the XMLHttpRequest object's "open" method to specify the URL of the resource to be requested and set the "async" parameter to "true". Then, you can use the "send" method to send the request.
 
 4. Explain how you would implement the checklist above.
